@@ -1,14 +1,16 @@
 {
   "name": "node-typescript-seed",
-  "version": "0.0.1",
-  "description": "Seed app for TypeScript.",
+  "version": "0.0.2",
+  "description": "Seed for TypeScript Node.js",
   "main": "lib/server/index.js",
   "scripts": {
-    "postinstall": "gulp",
+    "build": "gulp",
+    "prestart": "npm run build",
     "start": "node ./lib/server/index.js"
   },
-  "author": "Joseph Culbert <neckro@decay.us>",
-  "license": "WTFPL",
+  "seed-author": "Joseph Culbert <neckro@decay.us>",
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk>",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.11.1"
   },
